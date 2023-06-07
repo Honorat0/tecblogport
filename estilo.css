@@ -1,0 +1,261 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-size: 16px;
+    font-family: 'optima', sans-serif;
+    background: #F5F5F5;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: #0000CD;
+    padding: 8px 20px;
+}
+
+a:hover {
+    color: #0000CD;
+    background: #B0C4DE;
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background: #00BFFF;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#area-logo,
+#area-menu {
+    padding: 15px;
+}
+
+/* Typography */
+.datap {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+h1 {
+    color: black;
+    font-size: 2.5em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    background: #FFF;
+}
+
+.white {
+    color: white;
+}
+
+h2 {
+    color: #0000CD;
+}
+
+h3 {
+    background: #B0C4DE;
+    margin: auto;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Main Area */
+#area-principal {
+    width: 68%;
+    background: #FFF;
+    padding: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.postagem {
+    margin-bottom: 30px;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.postagem:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Lpostagem {
+    text-align: justify;
+}
+
+.Lpostagem img {
+    width: 85%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Lpostagem:hover img {
+    transform: scale(1.1);
+}
+
+.link-primary {
+    color: white;
+    background: gray;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.link-primary:hover {
+    background: #4169E1;
+    text-decoration: none;
+}
+
+/* Sidebar */
+#area-lateral {
+    width: 30%;
+    background: #FFF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Llateral {
+    margin-bottom: 20px;
+}
+
+.link-secondary {
+    color: #0000CD;
+    padding: 5px 10px;
+    border-bottom: 1px solid #0000CD;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.link-secondary:hover {
+    text-decoration: none;
+    border-bottom: 1px dashed #0000CD;
+    background: #B0C4DE;
+    color: black;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #area-principal {
+        width: 100%;
+        margin-right: 0;
+        border-radius: 0;
+    }
+
+    #area-lateral {
+        width: 100%;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 1.5em;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.footer-menu-item {
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.footer-menu-item:first-child {
+    margin-left: 0;
+}
+
+.footer-menu-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-menu-link:hover {
+    color: #B0C4DE;
+}
+
+.footer-menu-item:hover {
+    background: #B0C4DE;
+}
+
+/* Navigation Bar */
+#area-menu {
+    padding: 15px;
+    position: relative;
+}
+
+#area-menu ul {
+    list-style: none;
+    display: flex;
+}
+
+#area-menu li {
+    margin-right: 10px;
+}
+
+#area-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+#area-menu a:hover {
+    background: #B0C4DE;
+    color: black;
+    transform: translateY(-2px);
+}
